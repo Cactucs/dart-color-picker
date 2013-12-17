@@ -58,8 +58,8 @@ class _MouseListener {
 
   void _handlerDown(MouseEvent e) {
     startMouseEvent = e;
-    startMouseX = e.offsetX;
-    startMouseY = e.offsetY;
+    startMouseX = e.offset.x;
+    startMouseY = e.offset.y;
     _cursorX = startMouseX;
     _cursorY = startMouseY;
     _cursorX = max(0, min(element.clientWidth, _cursorX));

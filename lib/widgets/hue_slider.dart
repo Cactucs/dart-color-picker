@@ -43,7 +43,7 @@ class HueSlider {
   }
 
   void _draw() {
-    final context = canvas.context2d;
+    final context = canvas.context2D;
     context.fillStyle = gradient;
     context.fillRect(0, 0, canvas.width, canvas.height);
 
