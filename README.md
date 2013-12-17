@@ -11,7 +11,7 @@ Start by adding a dependency of the Color Picker [library](http://pub.dartlang.o
 
 Import the library into your project
 
-	import 'package:color_picker/color_picker_lib.dart';
+	import 'package:color_picker/color_picker.dart';
 
 Create the color picker by instantiating the `ColorPicker` object with the desired size
 
@@ -21,7 +21,7 @@ The size represents the no. of pixels of the gradient canvas.  Since the color r
 
 Add the color picker element to the DOM
 
-		query("#my_picker").nodes.add(colorPicker.element);
+		querySelector("#my_picker").nodes.add(colorPicker.element);
 
 
 The initial color and the currently selected color are shown on the top right corner along with the RGB values and its corresponding [HSV](http://en.wikipedia.org/wiki/HSL_and_HSV) values.
